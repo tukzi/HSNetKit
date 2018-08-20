@@ -1,6 +1,6 @@
 
 Pod::Spec.new do |s|
-  s.name             = 'HSNetKit'
+  s.name             = 'YKNetKit'
   s.version          = '1.0.1'
   s.summary          = '封装AFNetworking请求'
 
