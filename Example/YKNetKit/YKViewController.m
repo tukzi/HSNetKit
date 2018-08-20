@@ -7,6 +7,7 @@
 //
 
 #import "YKViewController.h"
+#import "YKNetWorking.h"
 
 @interface YKViewController ()
 
@@ -17,7 +18,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [YKNetWorking postWithUrl:@"https://pos.yeahka.com/fastpay/mgmt/check_status/query.do?app_version=215001" refreshCache:YES params:nil success:^(id response) {
+        NSLog(@"%@",response);
+    } fail:^(NSError *error) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning

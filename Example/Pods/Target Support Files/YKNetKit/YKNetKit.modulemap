@@ -1,0 +1,6 @@
+framework module YKNetKit {
+  umbrella header "YKNetKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
