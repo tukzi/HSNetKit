@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YKNetKit_Example' do
+  pod 'YKNetKit', :path => '../'
+
+  target 'YKNetKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
