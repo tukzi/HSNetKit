@@ -19,7 +19,9 @@
 {
     [super viewDidLoad];
     [YKNetWorking postWithUrl:@"https://pos.yeahka.com/fastpay/mgmt/check_status/query.do?app_version=215001" refreshCache:YES params:nil success:^(id response) {
+       
         NSLog(@"%@",response);
+        
     } fail:^(NSError *error) {
         
     }];
